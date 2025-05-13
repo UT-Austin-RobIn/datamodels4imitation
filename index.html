@@ -58,18 +58,27 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="https://shivindass.github.io/" target="_blank">Shivin Dass</a><sup>1</sup>,</span>
-                <a href="https://scholar.google.com/citations?user=BA1kFjMAAAAJ&hl=en" target="_blank">Alaa Khaddaj</a><sup>2</sup>,</span>
+                <a href="https://shivindass.github.io/" target="_blank">Shivin Dass</a><sup>*,1</sup>,</span>
+                <a href="https://scholar.google.com/citations?user=BA1kFjMAAAAJ&hl=en" target="_blank">Alaa Khaddaj</a><sup>*,2</sup>,</span>
               <span class="author-block">
                 <a href="https://loganengstrom.com/" target="_blank">Logan Engstrom</a><sup>2</sup>,</span>
+              <br>
               <span class="author-block">
                 <a href="http://madry.mit.edu/" target="_blank">Aleksander Mądry</a><sup>2</sup>,</span>
               <span class="author-block">
-                  <a href="https://andrewilyas.com/" target="_blank">Andrew Ilyas</a><sup>3</sup>,</span>
+                  <a href="https://andrewilyas.com/" target="_blank">Andrew Ilyas</a><sup>†,3</sup>,</span>
               <span class="author-block">
-                <a href="https://robertomartinmartin.com/" target="_blank">Roberto Martín-Martín</a><sup>1</sup></span>
+                <a href="https://robertomartinmartin.com/" target="_blank">Roberto Martín-Martín</a><sup>†,1</sup></span>
             </div>
 
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <sup><font size="-0.4">*</font></sup>
+                <font size="-0.4">Equal Contribution</font>,
+                <sup><font size="-0.4">†</font></sup>
+                <font size="-0.4">Equal Advising</font>
+              </span>
+            </div> 
             <div class="is-size-5 publication-authors">
               <span class="author-block"><sup>1</sup>The University of Texas at Austin, <sup>2</sup>MIT, <sup>3</sup>Stanford University
                 <!-- <br>Conferance name and year -->
@@ -155,7 +164,7 @@
         <div class="content has-text-justified">
           <p> 
             Datamodels is a framework which tries to answer the question -- 
-            <i>how would the output of a model change if we had trained on a different dataset?</i>.
+            <i>how would the output of a model change if we had trained on a different dataset?</i>
             In other words, datamodels provide a way to directly measure how the presence/absence of each training sample in the training
             of our model would affect its output without actually training the model on the new dataset.
             While there are several ways of estimating datamodels, we focus on <i>regression</i> and <i>metagradient-based</i> datamodels,
