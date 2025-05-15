@@ -90,7 +90,7 @@
               <div class="publication-links">
                     <!-- Arxiv PDF link -->
                 <span class="link-block">
-                  <a href="" target="_blank"
+                  <a href="https://arxiv.org/abs/2505.09603" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="fas fa-file-pdf"></i>
@@ -273,11 +273,12 @@
 
         <div class="content has-text-justified">
           <p>
-            Datamodels have found several applications in the fields of NLP and computer vision,
-            but need several key modifications before they can be applied to robotics.
-            DataMIL (Datamodels for Imitation Learning) provides a recipe to adapt datamodels for the robotics datasets,
-            providing a tractable optimization objective in place of costly rollouts and several modifications to reduce the noise in estimation,
-            improving the quality of the selected data.
+            We evaluate DaMIL on over 60 tasks spanning both simulation and real-world settings. 
+            In the real world, we use the Open X-Embodiment dataset as the prior and test on four target tasks (shown above). 
+            As illustrated in the results below, DaMIL consistently outperforms existing dataset selection methods across tasks with diverse characteristics. 
+            Most notably, it successfully selects relevant data for a completely new embodiment—Tiago—by identifying useful samples from datasets collected with different robots, such as the Google Robot and WidowX. 
+            We also extend our evaluation to a multitask setting, where the target set includes multiple tasks, and show that DaMIL can effectively retrieve data that supports all of them.
+            For a detailed analysis, please refer to the full paper.
           </p>
         </div>
 
