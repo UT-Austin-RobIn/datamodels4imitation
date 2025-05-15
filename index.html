@@ -5,8 +5,8 @@
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
   <meta name="description" content="by Shivin Dass, Alaa Khaddaj, Logan Engstrom, Aleksander Madry, Andrew Ilyas, Roberto Martín-Martín">
-  <meta property="og:title" content="DaMIL: Selecting Data for Robot Imitation Learning with Datamodels"/>
-  <meta property="og:description" content="DaMIL: Selecting Data for Robot Imitation Learning with Datamodels"/>
+  <meta property="og:title" content="DataMIL: Selecting Data for Robot Imitation Learning with Datamodels"/>
+  <meta property="og:description" content="DataMIL: Selecting Data for Robot Imitation Learning with Datamodels"/>
   <meta property="og:url" content="https://robin-lab.cs.utexas.edu/datamodels4imitation/"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <!-- <meta property="og:image" content="static/images/telemoma_architecture.png" />
@@ -14,8 +14,8 @@
   <meta property="og:image:height" content="630"/> -->
 
 
-  <meta name="twitter:title" content="DaMIL: Selecting Data for Robot Imitation Learning with Datamodels">
-  <meta name="twitter:description" content="DaMIL: Selecting Data for Robot Imitation Learning with Datamodels">
+  <meta name="twitter:title" content="DataMIL: Selecting Data for Robot Imitation Learning with Datamodels">
+  <meta name="twitter:description" content="DataMIL: Selecting Data for Robot Imitation Learning with Datamodels">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
   <!-- <meta name="twitter:image" content="https://robin-lab.cs.utexas.edu/telemoma-web/static/images/telemoma_architecture.png">
   <meta name="twitter:card" content="summary_large_image"> -->
@@ -53,7 +53,7 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <!-- <h1 class="title is-1 publication-title"></h1> -->
-            <h1 class="title is-1 publication-title"><span style="color:#1e5790; font-weight: 900;">DaMIL</span></h1>
+            <h1 class="title is-1 publication-title"><span style="color:#1e5790; font-weight: 900;">DataMIL</span></h1>
             <h2 class="subtitle is-2 publication-subtitle">Selecting Data for Robot Imitation Learning with Datamodels</h2>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
@@ -137,9 +137,9 @@
           <p>
             Robotics has amassed ever larger and more diverse datasets to train generalist robot policies via imitation.
             However, while imitation learning (IL) is a powerful paradigm for training robots to perform complex tasks, the performance of IL algorithms is highly sensitive on the data it's trained on. 
-            In this work, we introduce DaMIL, a novel data selection method that leverages datamodels to select high-quality datasets for IL. 
-            DaMIL selects data based on its relevance to the task at hand, ensuring that the model learns from the most informative examples. 
-            We demonstrate the effectiveness of DaMIL on 60+ simulation and real world tasks, most notably selecting relevant data from Open X-Embodiment datasets, showing significant improvements in performance compared to existing data selection methods.
+            In this work, we introduce DataMIL, a novel data selection method that leverages datamodels to select high-quality datasets for IL. 
+            DataMIL selects data based on its relevance to the task at hand, ensuring that the model learns from the most informative examples. 
+            We demonstrate the effectiveness of DataMIL on 60+ simulation and real world tasks, most notably selecting relevant data from Open X-Embodiment datasets, showing significant improvements in performance compared to existing data selection methods.
           </p>
         </div>
         <!-- Your image here -->
@@ -173,14 +173,14 @@
           </p>
         </div>
         <!-- Your image here -->
-        <!-- <div class="columns is-centered">
+        <div class="columns is-centered">
           <div class="column is-four-fifths">
             <video poster="" id="tree" autoplay controls muted loop height="60%">
-              <source src="static/videos/teaser_vid.mp4"
+              <source src="static/videos/datamodels.mp4"
               type="video/mp4">
             </video>
           </div>
-        </div> -->
+        </div>
       </div>
     </div>
   </div>
@@ -188,7 +188,7 @@
 
 <section class="section hero">
   <div class="container">
-    <h2 class="title is-2" style="text-align: center;">DaMIL: <span style="color:#1e5790; font-weight: 900;">Da</span>ta<span style="color:#1e5790; font-weight: 900;">M</span>odels for <span style="color:#1e5790; font-weight: 900;">I</span>mitation <span style="color:#1e5790; font-weight: 900;">L</span>earning</h2>
+    <h2 class="title is-2" style="text-align: center;">DataMIL: <span style="color:#1e5790; font-weight: 900;">DataM</span>odels for <span style="color:#1e5790; font-weight: 900;">I</span>mitation <span style="color:#1e5790; font-weight: 900;">L</span>earning</h2>
     <div class="columns is-centered">
       <div class="column is-four-fifths is-centered has-text-centered">
         <div class="columns is-centered">
@@ -196,7 +196,7 @@
             <p>
               Datamodels have found several applications in the fields of NLP and computer vision,
               but need several key modifications before they can be applied to robotics.
-              DaMIL (Datamodels for Imitation Learning) provides a recipe to adapt datamodels for the robotics datasets,
+              DataMIL (Datamodels for Imitation Learning) provides a recipe to adapt datamodels for the robotics datasets,
               providing a tractable optimization objective in place of costly rollouts and several modifications to reduce the noise in estimation,
               improving the quality of the selected data.
             </p>
@@ -230,12 +230,12 @@
 
 <section class="section hero">
   <div class="container">
-    <h2 class="title is-2" style="text-align: center;">Summary: Data Selection with DaMIL</h2>
+    <h2 class="title is-2" style="text-align: center;">Summary: Data Selection with DataMIL</h2>
     <div class="columns is-centered">
       <div class="column is-four-fifths is-centered has-text-centered">
         <div class="content has-text-justified">
           <p>
-            Data selection with DaMIL is a two step process:
+            Data selection with DataMIL is a two step process:
             <ol>
               <li><span style="color:#1e5790; font-weight: 900;">Estimate datamodels.</span> We first cluster the training samples into trajectories or sub-trajectories and estimate datamodels on them with our proposed target metric as the proxy</li>
               <li><span style="color:#1e5790; font-weight: 900;">Select data for policy training.</span> The datamodels provide a scaler score (influence) to each training sample which indicates how positively or negatively they influence our target
@@ -246,14 +246,11 @@
           </p>
         </div>
         <!-- Your image here -->
-        <!-- <div class="columns is-centered">
+        <div class="columns is-centered">
           <div class="column is-four-fifths">
-            <video poster="" id="tree" autoplay controls muted loop height="60%">
-              <source src="static/videos/teaser_vid.mp4"
-              type="video/mp4">
-            </video>
+            <img src="static/images/fig1_overall.png" alt="overall" width="100%">
           </div>
-        </div> -->
+        </div>
       </div>
     </div>
   </div>
@@ -278,7 +275,7 @@
           <p>
             Datamodels have found several applications in the fields of NLP and computer vision,
             but need several key modifications before they can be applied to robotics.
-            DaMIL (Datamodels for Imitation Learning) provides a recipe to adapt datamodels for the robotics datasets,
+            DataMIL (Datamodels for Imitation Learning) provides a recipe to adapt datamodels for the robotics datasets,
             providing a tractable optimization objective in place of costly rollouts and several modifications to reduce the noise in estimation,
             improving the quality of the selected data.
           </p>
@@ -296,16 +293,16 @@
 
 <section class="section">
   <div class="container">
-    <h2 class="title is-2" style="text-align: center;">What data does DaMIL select?</h2>
+    <h2 class="title is-2" style="text-align: center;">What data does DataMIL select?</h2>
     <div class="columns is-centered ">
       <div class="column is-four-fifths is-centered has-text-centered">
 
         <div class="content has-text-justified">
           <p>
-            We qualitatively find 3 interesting insights about the data selected by DaMIL:
+            We qualitatively find 3 interesting insights about the data selected by DataMIL:
             <ol>
-              <li><b>Distribution of selected data.</b> Below we show the distribution of datasets selected by DaMIL and some representative baselines
-                on Tiago-Sink and Franka-Pouch tasks. We find that the data selected by DaMIL typically spans several datasets, while similarity based baselines
+              <li><b>Distribution of selected data.</b> Below we show the distribution of datasets selected by DataMIL and some representative baselines
+                on Tiago-Sink and Franka-Pouch tasks. We find that the data selected by DataMIL typically spans several datasets, while similarity based baselines
                 selects most of their data from a single dataset. 
                 We hypothesize that since there is no data that exactly matches the target task, the selected data must not only be relevant but general, so as to enable positive transfer in capabilities and not make the policy overfit to a single type of domain.</li>  
             </ol>
@@ -315,7 +312,7 @@
         <div class="columns is-centered">
           <div class="column is-one-third">
             <img src="static/images/qualitative/tiago_damil.png" alt="DaMIl" width="90%"/>
-            <h5 class="title is-5" style="text-align: center;">DaMIL</h5><br>
+            <h5 class="title is-5" style="text-align: center;">DataMIL</h5><br>
           </div>
           <div class="column is-one-third">
             <img src="static/images/qualitative/tiago_action.png" alt="AR" width="74%">
@@ -331,11 +328,11 @@
         <div class="content has-text-justified">
           <p>
             <ol start="2">
-              <li><b>Type of embodiment selected.</b> DaMIL is able to select useful data for a completely new embodiment in the Tiago-Sink task. 
+              <li><b>Type of embodiment selected.</b> DataMIL is able to select useful data for a completely new embodiment in the Tiago-Sink task. 
                 Even though the datasets selected seem visually quite different, sampled from datasets such as RT-1, BC-Z and Bridge, 
                 they still represent the essence of the target task -- robots operating on a table top from an ego-perspective. For baselines, even when the target
                 embodiment is present in prior data (eg. Franka-Pouch task), the selected data often comes from other embodiments possible due to them putting more weight on the scene
-                and distractors when computing similarity. In contrast, DaMIL is able to select datasets from the correct embodiment if present in the prior dataset.</li>
+                and distractors when computing similarity. In contrast, DataMIL is able to select datasets from the correct embodiment if present in the prior dataset.</li>
             </ol>
           </p>
         </div>
@@ -343,7 +340,7 @@
         <div class="columns is-centered">
           <div class="column is-one-third">
             <img src="static/images/qualitative/pouch_damil.png" alt="DaMIl" width="90%"/>
-            <h5 class="title is-5" style="text-align: center;">DaMIL</h5><br>
+            <h5 class="title is-5" style="text-align: center;">DataMIL</h5><br>
           </div>
           <div class="column is-one-third">
             <img src="static/images/qualitative/pouch_flow.png" alt="AR" width="76%">
@@ -359,7 +356,7 @@
         <div class="content has-text-justified">
           <p>
             <ol start="3">
-              <li><b>Top and bottom samples.</b> Interestingly when we visually inspect the data selected by DaMIL (shown below),
+              <li><b>Top and bottom samples.</b> Interestingly when we visually inspect the data selected by DataMIL (shown below),
                 we find that the highest and lowest ranked samples typically look alike. This is in line with observation in computer vision
                 where most useful data looks very similar to the most harmful, albiet with different labels. Similarly in robotics,
                 similar states can have very different action distributions, and while some of these actions might help reduce the policy loss on the target data, 
