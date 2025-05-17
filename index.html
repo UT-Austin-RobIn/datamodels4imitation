@@ -138,19 +138,20 @@
             Robotics has amassed ever larger and more diverse datasets to train generalist robot policies via imitation.
             However, while imitation learning (IL) is a powerful paradigm for training robots to perform complex tasks, the performance of IL algorithms is highly sensitive on the data it's trained on. 
             In this work, we introduce DataMIL, a novel data selection method that leverages datamodels to select high-quality datasets for IL. 
-            DataMIL selects data based on its relevance to the task at hand, ensuring that the model learns from the most informative examples. 
-            We demonstrate the effectiveness of DataMIL on 60+ simulation and real world tasks, most notably selecting relevant data from Open X-Embodiment datasets, showing significant improvements in performance compared to existing data selection methods.
+            DataMIL computes how each training sample influences the policy performance and selects samples that leads to the maximum improvement, thus enabling end-to-end policy aware data seleciton. 
+            We demonstrate the effectiveness of DataMIL on 60+ simulation and real world tasks, most notably selecting relevant data from Open X-Embodiment datasets, showing significant improvements in performance compared to existing data selection methods, 
+            even for novel embodiments, not present in the prior data. 
           </p>
         </div>
         <!-- Your image here -->
-        <!-- <div class="columns is-centered">
+        <div class="columns is-centered">
           <div class="column is-four-fifths">
             <video poster="" id="tree" autoplay controls muted loop height="60%">
-              <source src="static/videos/teaser_vid.mp4"
+              <source src="static/videos/overview.mp4"
               type="video/mp4">
             </video>
           </div>
-        </div> -->
+        </div>
       </div>
     </div>
   </div>
@@ -394,7 +395,12 @@
     <h2 class="title">BibTeX</h2>
     <pre>
       <code>
-        
+        @article{dass2025datamil,
+          title={DataMIL: Selecting Data for Robot Imitation Learning with Datamodels},
+          author={Dass, Shivin and Khaddaj, Alaa and Engstrom, Logan and Madry, Aleksander and Ilyas, Andrew and Mart{\'\i}n-Mart{\'\i}n, Roberto},
+          journal={arXiv preprint arXiv:2505.09603},
+          year={2025}
+        }
       </code>
     </pre>
   </div>
