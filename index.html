@@ -137,8 +137,8 @@
           <p>
             Robotics has amassed ever larger and more diverse datasets to train generalist robot policies via imitation.
             However, while imitation learning (IL) is a powerful paradigm for training robots to perform complex tasks, the performance of IL algorithms is highly sensitive on the data it's trained on. 
-            In this work, we introduce DataMIL, a novel data selection method that leverages datamodels to select high-quality datasets for IL. 
-            DataMIL computes how each training sample influences the policy performance and selects samples that leads to the maximum improvement, thus enabling end-to-end policy aware data seleciton. 
+            In this work, we introduce DataMIL, a novel data selection method that leverages datamodels to select high-quality task-aware datasets for IL. 
+            DataMIL estimates how each training sample influences the policy performance on a given task and selects samples that leads to the maximum improvement, thus enabling end-to-end policy-aware data seleciton. 
             We demonstrate the effectiveness of DataMIL on 60+ simulation and real world tasks, most notably selecting relevant data from Open X-Embodiment datasets, showing significant improvements in performance compared to existing data selection methods, 
             even for novel embodiments, not present in the prior data. 
           </p>
